@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-07-22",
+  "jurisdiction": "pe",
+  "focus": "Peruvian tax-benefit surface: personal income tax (TUO LIR, UIT-banded), IGV/ISC, EsSalud and pension contributions, Pension 65, and the Juntos CCT.",
+  "purpose": "Household-level comparison-oracle and supporting-source references for Peru Axiom coverage. None of these are legal authority.",
+  "oracle_scope": "A RuleSpec oracle must be an executable, pinned external calculator that accepts household-level inputs and returns household-level tax-benefit outputs comparable to Axiom outputs. Aggregate simulators, distributional reports, parameter documentation, and public model summaries are supporting references only, not oracles.",
+  "oracles": [
+    {
+      "id": "perumod",
+      "name": "PERUMOD",
+      "url": "https://www.wider.unu.edu/about/perumod-simulating-tax-and-benefit-policies-development-peru",
+      "local_path": "~/.axiom/oracles/southmod/bundle/ (licensed, non-redistributable; never committed)",
+      "commit": null,
+      "model": "PERUMOD v2.4 (SOUTHMOD; EUROMOD platform)",
+      "dataset": "ENAHO 2019-2022 based input microdata (shipped with the licensed bundle where included)",
+      "role": "Household-level tax-benefit comparison oracle for Peru. Policy years 2019-24. Report CR-PERUMOD-v2-4 (UNU-WIDER).",
+      "coverage": [
+        "personal_income_tax",
+        "igv_isc",
+        "essalud_contributions",
+        "pension_contributions",
+        "pension_65",
+        "juntos_cct",
+        "household_disposable_income"
+      ],
+      "authority": "wiring_pending",
+      "availability_check": {
+        "checked_at": "2026-07-22",
+        "status": "wiring_pending",
+        "detail": "The locally held licensed SOUTHMOD bundle (EUROMOD runtime proven on the Ghana and Rwanda lanes) must be inventoried for PERUMOD PE systems before wiring. Validation frame: PERUMOD v2.4, policy years 2019-24."
+      },
+      "bundle_sha256": null
+    }
+  ]
+}
