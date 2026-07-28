@@ -9,3 +9,11 @@ All encoded law lives under a single `pe/` namespace. The validation frame is PE
 ## Source Priority
 
 Policy must come from the furthest upstream available source: El Peruano prints and official consolidations first (SUNAT/MEF TUO compilations, the Congreso law library, gob.pe official document CDN — record the host in manifest metadata), decretos supremos and institutional resolutions next, agency guidance only after the governing instrument is identified.
+
+## Listing gates
+
+This repo carries `app_visibility = "experimental"` in `.axiom/registry.toml` and stays out of app surfaces until:
+
+1. The encoded surface covers the flagship calculation (personal income tax gross-to-net for a formal employee under the UIT-banded schedule) end to end with companion tests.
+2. Oracle parity suites exist and pass against PERUMOD for the encoded surface.
+3. Citation paths are stable (TUO/decreto-supremo-number form against the El Peruano prints).
